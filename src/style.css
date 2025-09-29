@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+	--font-size: clamp(0.75rem, 0.6856rem + 0.2746vw, 1.125rem);
+	--w-wrapper: 1200px;
+	--rounded: var(--radius-sm);
+
+	--bg: var(--color-white);
+	--fg: var(--color-slate-800);
+	--border: var(--color-slate-300);
+	--hover: var(--color-slate-100);
+
+	--primary-bg: var(--color-amber-400);
+	--primary-fg: var(--color-amber-900);
+
+	--opposite-bg: var(--color-slate-800);
+	--opposite-fg: var(--color-slate-100);
+
+	--tooltip-bg: var(--color-slate-800);
+	--tooltip-fg: var(--color-slate-100);
+
+	scrollbar-color: var(--fg) var(--bg);
+}
+
+.dark {
+	--bg: var(--color-slate-950);
+	--fg: var(--color-slate-200);
+	--border: var(--color-slate-700);
+	--hover: var(--color-slate-900);
+
+	--primary-bg: var(--color-amber-400);
+	--primary-fg: var(--color-amber-900);
+
+	--opposite-bg: var(--color-slate-200);
+	--opposite-fg: var(--color-slate-800);
+
+	--tooltip-bg: var(--color-slate-200);
+	--tooltip-fg: var(--color-slate-800);
+
+	scrollbar-color: var(--fg) var(--bg);
+}
+
+h2 {
+	font-size: calc(2 * var(--font-size));
+	font-weight: 500;
+}
+
+h3 {
+	font-size: calc(1.5 * var(--font-size));
+	font-weight: 500;
+}
