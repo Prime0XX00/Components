@@ -11,14 +11,14 @@ const Sidebar = () => {
 			<a
 				href="https://github.com/Prime0XX00/Components"
 				className="
-			 bg-(--primary-bg) text-(--primary-fg) p-2 w-fit h-fit cursor-pointer hover:rounded-b-(--rounded) hover:pt-5 lg:hover:rounded-r-(--rounded) lg:hover:pl-5 lg:hover:rounded-b-0 lg:hover:pt-0 transition-all"
+			 bg-(--primary-bg) text-(--primary-fg) p-2 w-fit h-fit cursor-pointer hover:rounded-b-(--rounded) hover:pt-5 lg:hover:rounded-r-(--rounded) lg:hover:pl-5 lg:hover:rounded-b-0 lg:hover:pt-2 transition-all"
 			>
 				<FaGithub size={40} />
 			</a>
 			<div
 				onClick={() => toggle?.()}
 				className="
-			 bg-(--opposite-bg) text-(--opposite-fg) p-2 w-fit h-fit cursor-pointer hover:rounded-b-(--rounded) hover:pt-5 lg:hover:rounded-r-(--rounded) lg:hover:pl-5 lg:hover:rounded-b-0 lg:hover:pt-0 transition-all"
+			 bg-(--opposite-bg) text-(--opposite-fg) p-2 w-fit h-fit cursor-pointer hover:rounded-b-(--rounded) hover:pt-5 lg:hover:rounded-r-(--rounded) lg:hover:pl-5 lg:hover:rounded-b-0 lg:hover:pt-2 transition-all"
 			>
 				{mode == LIGHTMODE ? <LuSun size={40} /> : <LuMoon size={40} />}
 			</div>
